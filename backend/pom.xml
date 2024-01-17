@@ -53,6 +53,7 @@
     </dependencies>
 
     <build>
+        <finalName>todo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
