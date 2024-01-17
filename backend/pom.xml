@@ -43,6 +43,13 @@
             <artifactId>spring-boot</artifactId>
             <version>3.2.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo.spring30x</artifactId>
+            <version>4.9.3</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
