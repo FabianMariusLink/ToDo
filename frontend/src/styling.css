@@ -1,0 +1,108 @@
+:root {
+    --font-color: rgba(39, 46, 51, 0.5);
+    --button-color: #5B7A8F;
+    --animation-color: rgba(91, 122, 143, 0.7);
+}
+
+h1, h2, p {
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    color: var(--font-color);
+    margin: .5em;
+}
+
+button {
+    padding: 1.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    background-color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: .15em solid var(--font-color);
+    border-radius: .5em;
+    text-align: center;
+    width: 11em;
+    margin: 0 0 1em 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.error {
+    animation: blink 300ms 2 forwards;
+    border-color: black;
+}
+
+@keyframes blink {
+    0% {
+        background-color: var(--animation-color);
+    }
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: var(--animation-color);
+    }
+}
+
+.popUp {
+    width: 11em;
+    height: 9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 1em;
+    border: .15em solid rgba(39, 46, 51, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+.date {
+    font-size: .6em;
+}
+
+#buttonNewToDo {
+    position: fixed;
+    height: 4.5em;
+    width: 4.5em;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#buttonCloseFormNewToDo {
+    position: absolute;
+    top: 1.3em;
+    right: 1.3em;
+    padding: 0.3em;
+    font-size: .7em;
+    text-align: center;
+    margin-left: auto;
+}
+
+#buttonSaveFormNewToDo {
+    margin: auto;
+}
