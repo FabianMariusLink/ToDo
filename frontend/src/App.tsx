@@ -1,7 +1,9 @@
+import NewToDoForm from "./components/NewToDoForm.tsx";
+
 function App() {
 
     return (
-        <p>Frontend works!</p>
+        <NewToDoForm/>
     )
 }
 
